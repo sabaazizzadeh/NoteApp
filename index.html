@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note-Taking App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        textarea {
+            background-color: #FFFFFF ;
+            color:#3D633B ;
+            width:708px ;
+            height:48px ;
+            outline: none;
+            border: none;
+            border-radius:10px ;
+            font-size:16px ;
+            font-weight:400 ;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            box-shadow: 0 0 1px #3D633B;
+            margin-bottom: 10px;
+        }
+        .createNote {
+            background-color:#3D633B ;
+            color:#FFFFFF ;
+            width:708px ;
+            height:48px ;
+            border: none;
+            border-radius:10px ;
+            font-size:16px ;
+            font-weight:400 ;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin-bottom: 35px;
+        }
+        .note {
+            margin: auto;
+          width:708px ;
+          height:82px ;
+          background-color:#D2D2D2 ;
+          color:#FFFFFF ;
+          font-size:16px ;
+          border: none;
+          outline: none;
+          border-radius: 7px;
+          text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h2>Note-Taking App</h2>
+    <textarea id="noteInput" placeholder="Write your note here..."></textarea>
+    <br>
+    <button class="createNote" onclick="saveNote()">Save Note</button>
+    <div id="notesContainer"></div>
+    
+    <script src="./app.js">
+    </script>
+</body>
+</html>
